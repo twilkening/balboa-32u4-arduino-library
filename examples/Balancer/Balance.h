@@ -8,7 +8,10 @@
 // and 45:21 plastic gears, for an overall gear ratio of 111.
 // Adjust the ratio below to scale various constants in the
 // balancing algorithm to match your robot.
-const int16_t GEAR_RATIO = 111;
+// UPDATE Teo Wilkening: Gear ratio 127 (from 47:19 gears)
+// See balboa-kit-gear-ratio-chart.pdf for reference calculation
+// 12/08/2020
+const int16_t GEAR_RATIO = 127;
 
 // This constant limits the maximum motor speed.  If your gear
 // ratio is lower than what we used, or if you are testing
