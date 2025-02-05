@@ -133,7 +133,7 @@ void lyingDown()
 
 void integrateGyro()
 {
-  // Convert from full-scale 1000 deg/s to deg/s.
+  // Apply sensitivity gain to gyro readings: 35 mdps/LSB  (for FS = +/-1000 dps)
   angleRate = (imu.g.y - gYZero) / 29;
 
   angle += angleRate * UPDATE_TIME_MS;
